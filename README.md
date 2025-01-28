@@ -1,18 +1,32 @@
-To test this project, please install node package manager(npm) and vite, a frontend development tool. 
+# TodoList Application
+A simple and efficient web-based Todo List application to help you manage your daily tasks effectively.
 
-npm installation guide:
-https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+## Features
+- Create lists: Easily create new lists by typing a name and selecting an icon. 
+- Add tasks: Quickly add new tasks to any list.
+- Edit tasks: Modify existing tasks as needed.
+- Delete tasks/lists: Remove tasks or lists that are no longer necessary.
+- Mark as Complete: Check off tasks to mark them as completed. 
+- Persistent Storage: Your lists and tasks are saved locally, so they remain intact even after refreshing the page.
 
-vite installation guide:
-https://vite.dev/guide/
-
-After completeing these steps above, input this command to your prompt:
+## Getting Started 
+To run this project locally, follow these steps:
+1. Clone the repository:
+```
+git clone https://github.com/andyTuruu/TodoList.git
+cd TodoList
+```
+2. Install Dependencies: Ensure you have Node.js and npm installed. Then, run:
+```
+npm install
+```
+3. Start the Development Server:
+```
 npm run dev
+```
 
-The results should look like this:
+Provided that you've already installed Vite server which is popular for development testing, you can access the application at `https://localhost:5173`
+If you don't have installed Vite, please refer to ths link below:
+[Vite installation](https://vite.dev/guide/)
 
-  VITE v4.3.5  ready in 230 ms
-
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h to show help
+Alternatively, you can test this application by opening index.html file in your preferred browser. 
