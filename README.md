@@ -16,17 +16,19 @@ To run this project locally, follow these steps:
 git clone https://github.com/andyTuruu/TodoList.git
 cd TodoList
 ```
-2. Install Dependencies: Ensure you have Node.js and npm installed. Then, run:
+You will have to install Vite (web development tool). 
+
+2. Install the vite tool:
+```
+npm create vite@latest
+```
+3. Select **_React_** framework and **_Javascript_** Variant
+4. Install Dependencies: Ensure you have Node.js and npm installed. Then, run:
 ```
 npm install
 ```
-3. Start the Development Server:
+5. Start the Development Server:
 ```
 npm run dev
 ```
-
-Provided that you've already installed Vite server which is popular for development testing, you can access the application at `https://localhost:5173`
-If you don't have installed Vite, please refer to ths link below:
-[Vite installation](https://vite.dev/guide/)
-
-Alternatively, you can test this application by opening index.html file in your preferred browser. 
+Now, you can access the application at `https://localhost:5173`
