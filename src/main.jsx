@@ -7,9 +7,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { App } from './components/App.jsx';
+<<<<<<< HEAD
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
+=======
+import { AppProvider } from './providers/AppContext.jsx';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <AppProvider>
+      <App />
+    </AppProvider>
+>>>>>>> 18c22ae (Second commit)
   </React.StrictMode>
 );

@@ -6,7 +6,10 @@ import {
   Dialog,
   DialogActions,
   DialogContent,
+<<<<<<< HEAD
   DialogContentText,
+=======
+>>>>>>> 18c22ae (Second commit)
   DialogTitle,
   TextField,
   ToggleButton,
@@ -17,7 +20,11 @@ import { useEffect, useState } from 'react';
 import { useTodoLists } from '../hooks/useTodoLists.js';
 
 export function NewListDialog({ dialogState }) {
+<<<<<<< HEAD
   const [state, setState] = useState('');
+=======
+  const [listName, setListName] = useState('');
+>>>>>>> 18c22ae (Second commit)
   const [iconSearch, setIconSearch] = useState('');
   const [icon, setIcon] = useState('');
   const { newList } = useTodoLists();
@@ -37,6 +44,7 @@ export function NewListDialog({ dialogState }) {
     <Dialog open={dialogState.isOpen} onClose={dialogState.close}>
       <DialogTitle>Create New List</DialogTitle>
       <DialogContent>
+<<<<<<< HEAD
         <DialogContentText>Create a new list</DialogContentText>
         <TextField
           onChange={event => {
@@ -46,6 +54,16 @@ export function NewListDialog({ dialogState }) {
           autoFocus
           margin="dense"
           id="name"
+=======
+        <TextField
+          autoFocus
+          onChange={event => {
+            setListName(event.target.value);
+          }}
+          value={listName}
+          margin="dense"
+          id="list-name"
+>>>>>>> 18c22ae (Second commit)
           label="New List"
           type="text"
           fullWidth
@@ -56,9 +74,14 @@ export function NewListDialog({ dialogState }) {
             setIconSearch(event.target.value);
           }}
           value={iconSearch}
+<<<<<<< HEAD
           autoFocus
           margin="dense"
           id="name"
+=======
+          margin="dense"
+          id="icon-search"
+>>>>>>> 18c22ae (Second commit)
           label="Icon Search"
           type="text"
           fullWidth
@@ -100,9 +123,19 @@ export function NewListDialog({ dialogState }) {
         <Button onClick={dialogState.close}>Cancel</Button>
         <Button
           onClick={() => {
+<<<<<<< HEAD
             void newList(state, icon);
             dialogState.close();
           }}
+=======
+            void newList(listName, icon);
+            dialogState.close();
+            setListName('');
+            setIconSearch('');
+            setIcon('');
+          }}
+          disabled={!listName.trim()}
+>>>>>>> 18c22ae (Second commit)
         >
           Create
         </Button>
