@@ -12,7 +12,11 @@ export function AppHeader() {
       <NewListDialog dialogState={dialogState} />
       <AppBar
         position="fixed"
+<<<<<<< HEAD
         sx={{ zIndex: theme => theme.zIndex.drawer + 1, backgroundColor: "#0D3B66"}}
+=======
+        sx={{ zIndex: theme => theme.zIndex.drawer + 1 }}
+>>>>>>> 18c22ae (Second commit)
       >
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
