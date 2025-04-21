@@ -1,5 +1,5 @@
 # TodoList Application
-A simple and efficient web-based Todo List application to help you manage your daily tasks effectively. It's styled with Material-UI.
+A simple and efficient web-based Todo List application to help you manage your daily tasks effectively. It's styled with Material-UI..
 
 ## Features
 - Create lists: Easily create new lists by typing a name and selecting an icon. 
